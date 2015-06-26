@@ -8,7 +8,7 @@ import pika #package
 import random
 import time
 import datetime
-import requests #package
+import requests
 from requests.exceptions import ConnectionError
 
 # global variables
