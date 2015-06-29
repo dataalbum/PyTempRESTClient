@@ -42,7 +42,7 @@ def get_temp():
     d['measurename'] = measure_name
     d['unitofmeasure'] = "C"
     d['value'] = temperature
-    d['timestamp'] = str(datetime.datetime.now())
+    d['timestamp'] = str(datetime.datetime.utcnow().isoformat())
     d['year'] = str(datetime.datetime.today().year)
     d['month'] = str(datetime.datetime.today().month)
     d['day'] = str(datetime.datetime.today().day)
